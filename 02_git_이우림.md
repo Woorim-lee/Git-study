@@ -143,6 +143,8 @@ Staging Area(스냅샷 무대) 에 파일 추가
 ### `git log`
 
 버전(커밋)들의 히스토리(로그)
+* `git log --all`
+* `git log --all --graph --oneline`
 
 
 
