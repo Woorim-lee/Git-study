@@ -5,6 +5,10 @@
 
 
 
+---
+
+
+
 ### CLI (Command Line Interface)
 
 * `pwd` print working directory, 현재 폴더 확인
@@ -27,11 +31,15 @@
 
 
 
+---
+
 
 
 [생활코딩 프로젝트 관리 참고](https://opentutorials.org/course/3838)
 
 [Git 간편안내서 참고](http://rogerdudler.github.io/git-guide/index.ko.html)
+
+[Git Book_한글](http://git-scm.com/book/ko/v2)
 
 
 
@@ -46,8 +54,6 @@
 3. `cd 폴더명` 생성된 폴더로 이동
 
 4. `git init` git 시작!
-
-
 
 
 
@@ -111,9 +117,19 @@
 
 
 
+---
+
+
+
 ##### 대단히 주관적이고 간결한 git 의 요약
 
 로컬저장소에서 작업 -> `git status` -> `git add 파일명` -> `git commit -m "최종메세지"` -> 원격저장소에 작업내용 업데이트 `git push origin master` -> 원격저장소의 최신본을 로컬저장소로 가져오기 `git pull origin master` -> 로컬저장소에서 작업 -> ...의 반복
+
+
+
+---
+
+
 
 
 
