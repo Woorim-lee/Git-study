@@ -112,3 +112,21 @@ ex ) 두번째 행에 base와 there은 **B** (there에서 수정X), A는 **H** �
 
 8. `git log`해보면, merge commit 이 생성된 것을 알 수 있음
 
+
+
+
+
+## 수업을 마치며..
+
+branch를 어떻게 잘 활용 할 수 있을까..
+
+git workflow 사례를 참고해보기, 개발자들에게 채택된 모범사례!로 공부해보기
+
+* git flow 모델 : 같이 다수의 메인테이너들이 하나의 repository에서 동시에 작업할 수 있는 상황에서 큰 장점이 있는 브랜칭 모델
+
+  ![Git flow branch diagram](https://blog.banksalad.com/static/5c4381fd1ef754f61012604281e848f2/33d1d/gitflow.png)
+
+* cherry-pick : 병합과 관련된 기능, 부분적으로 병합하는 기능!
+
+* rebase : merge와 목표는 같으나, timeline을 좀 더 깔끔하게 할 수 있다는 장점
+
