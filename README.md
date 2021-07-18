@@ -149,3 +149,15 @@
 
 `git push origin master`
 
+*  비교 (파일의 어떤 내용이 바뀌었는지, commit 간의 비교/branch간의 비교도 가능!)
+
+`git diff` : commit 된 파일 상태와 현재 수정중인 상태 비교
+
+`git diff --staged` : commit 된 파일 상태와 add된 파일 상태 비교
+
+`git diff [비교할 commit hash1] [비교할 commit hash2]` : commit 간의 상태 비교 (commit hash 이용)
+
+###### ex ) git diff 048171 0c747d
+
+
+

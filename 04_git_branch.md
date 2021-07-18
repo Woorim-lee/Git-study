@@ -25,8 +25,31 @@ branch와 branch를 병합할 때 *충돌*의 문제점 : 같은 파일내에 �
 
 * `base` : merge 가 필요한 branch의 공통된 조상, 그 `base`를 바탕으로 새로운 버전을 만들 수 있음 (병합 커밋=merge된 commit)
 * `git merge [branch 이름]` 
-  * ex ) branch가 *master* 와 *o2* 가 있을 때, *master* 에 *o2*를 병합하고 싶다면( = *o2* 브랜치의 내용을 *master*로 합치겠다라는 의미), 일단 *master* 가 head로 되어있어야 하고( = *master* 브랜치 상태가 된다), 그리고 그 상태에서 `git merge o2` 를 해준다 = *master* 브랜치에 *o2* 브랜치를 병합한다! 라는 의미 -> 병합된 새로운 버전 생성, master 브랜치 버전과 o2 브랜치 버전이 **공통의 조상**으로하는 새로운 커밋 생성
+  * ex ) branch가 *master* 와 *o2* 가 있을 때, *master* 에 *o2*를 병합하고 싶다면( = *o2* 브랜치의 내용을 *master*로 합치겠다라는 의미), 일단 *master* 가 head로 되어있어야 하고( = *master* 브랜치 상태가 된다), 그리고 그 상태에서 `git merge o2` 를 해준다 = *master* 브랜치에 *o2* 브랜치를 병합한다! 라는 의미 -> 병합된 새로운 버전 생성, master 브랜치 버전과 o2 브랜치 버전이 **공통의 조상**으로하는 *새로운*  커밋 생성
   * branch 변경(head가 가르키는)은 `git checkout branch명` 으로 사용
 * `git reset --hard` merge 취소 -> 이전 버전으로 변경
 
-* 
+
+
+
+## `conflict`
+
+병합 시, 동일한 파일 내의 동일한 부분이 변경된 경우 git 이 확인을 요하는 기능
+
+
+
+* **conflict** message
+
+  * CONFLICT (content) : Merge conflict in 파일명
+
+    Automatic merge failed; fix conflicts and then commit the result.
+
+    `git status` 로 상태를 보면, `both modified : 파일명 메세지`가 나옴
+
+  * conflict 발생 시 해결 순서
+
+    1)  파일 내 들어가서 어떤 부분이 충돌(중복수정) 되었는지 확인 (각 branch 마다 중복 수정한 부분이 표시 되어있음)
+
+    2) 올바르게 수정 후, git 에게 충돌을 확인(및 수정) 하였다는 의미로 `git add 파일명`  해줌
+
+    3) `git commit` 해주면 파일이 충돌이 되었고 해결되었다 라는 내용을 확인가능s
