@@ -101,3 +101,6 @@ ex ) 두번째 행에 base와 there은 **B** (there에서 수정X), A는 **H** �
 4. base : 공통의 조상 / local : 내가 있는 쪽! 현재 내가 속해있는 branch 가 local 임 / remote 저들이 있는곳.. 댕겨오려는 branch가 remote 임
 
 ![p4mergetool](/Users/user/Desktop/p4mergetool.png)
+
+<img src="/Users/user/Desktop/p4mergetool.png" title="p4mergetool">
+
