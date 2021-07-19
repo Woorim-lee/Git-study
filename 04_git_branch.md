@@ -130,3 +130,12 @@ git workflow 사례를 참고해보기, 개발자들에게 채택된 모범사�
 
 * rebase : merge와 목표는 같으나, timeline을 좀 더 깔끔하게 할 수 있다는 장점
 
+
+
+## 원격 브랜치와 Fetch
+
+`git pull` 하는 것과 `git fetch` 는 무슨 차이가 있을까?
+
+
+
+* `git pull` = `git fetch` (원격 저장소만 업데이트) 후 `git merge origin/master` 한 것과 동일함
