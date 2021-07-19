@@ -6,6 +6,8 @@ branch와 branch를 병합할 때 *충돌*의 문제점 : 같은 파일내에 �
 
 
 
+
+
 ## `git branch`
 * `git branch` : 브랜치의 목록을 보여줌, 현재는 `master` 밖에 없고, 이는 `master` 브랜치 위에서 작업을 한 것이라는 의미
 * `git log --all --graph --oneline` 을 실행시켜, 현재까지의 작업 상황을 알 수 있고, `HEAD`가 `master`를 가르키고 있음을 알 수 있음.
@@ -14,8 +16,12 @@ branch와 branch를 병합할 때 *충돌*의 문제점 : 같은 파일내에 �
 
 
 
+
+
 ## `git checkout`
 * `git checkout [브랜치명]` : 브랜치명 버전으로 `HEAD`가 변경됨. 그 당시의 버전(작업 내용)으로 바뀜
+
+
 
 
 
@@ -28,6 +34,8 @@ branch와 branch를 병합할 때 *충돌*의 문제점 : 같은 파일내에 �
   * ex ) branch가 *master* 와 *o2* 가 있을 때, *master* 에 *o2*를 병합하고 싶다면( = *o2* 브랜치의 내용을 *master*로 합치겠다라는 의미), 일단 *master* 가 head로 되어있어야 하고( = *master* 브랜치 상태가 된다), 그리고 그 상태에서 `git merge o2` 를 해준다 = *master* 브랜치에 *o2* 브랜치를 병합한다! 라는 의미 -> 병합된 새로운 버전 생성, master 브랜치 버전과 o2 브랜치 버전이 **공통의 조상**으로하는 *새로운*  커밋 생성
   * branch 변경(head가 가르키는)은 `git checkout branch명` 으로 사용
 * `git reset --hard` merge 취소 -> 이전 버전으로 변경
+
+
 
 
 
@@ -55,6 +63,8 @@ branch와 branch를 병합할 때 *충돌*의 문제점 : 같은 파일내에 �
     2) 올바르게 수정 후, git 에게 충돌을 확인(및 수정) 하였다는 의미로 `git add 파일명`  해줌
 
     3) `git commit` 해주면 파일이 충돌이 되었고 해결되었다 라는 내용을 확인가능s
+
+
 
 
 
